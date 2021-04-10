@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43FF6E85ED370CF7B40FFE6D /* Pods_DesafioFinal_MariaClaraDaSilvaLopes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5A61F2B7E7F990993FDD1E /* Pods_DesafioFinal_MariaClaraDaSilvaLopes.framework */; };
+		A418842886D6B8E0F413F17B /* Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E14AA953488C982276E775 /* Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework */; };
+		CC0CB980261DEFBF00B5C77C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0CB97F261DEFBF00B5C77C /* DetailViewController.swift */; };
+		CC0CB985261DEFDA00B5C77C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0CB984261DEFDA00B5C77C /* DetailView.swift */; };
+		CC137686261F9DC90022EDBE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC137685261F9DC90022EDBE /* HomeTableViewCell.swift */; };
+		CC1494AA26193CD0005CAC02 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1494A926193CD0005CAC02 /* HomeViewController.swift */; };
+		CC1494AF2619416D005CAC02 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1494AE2619416D005CAC02 /* HomeView.swift */; };
+		CC21F97126166CA000FD3471 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC21F97026166CA000FD3471 /* AppDelegate.swift */; };
+		CC21F97326166CA000FD3471 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC21F97226166CA000FD3471 /* SceneDelegate.swift */; };
+		CC21F97526166CA000FD3471 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC21F97426166CA000FD3471 /* LoginViewController.swift */; };
+		CC21F97826166CA000FD3471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC21F97626166CA000FD3471 /* Main.storyboard */; };
+		CC21F97A26166CA200FD3471 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC21F97926166CA200FD3471 /* Assets.xcassets */; };
+		CC21F97D26166CA200FD3471 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC21F97B26166CA200FD3471 /* LaunchScreen.storyboard */; };
+		CC21F9B526167ACD00FD3471 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC21F9B426167ACD00FD3471 /* LoginView.swift */; };
+		CC7B3D61261E526E00A3BB01 /* DetailScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7B3D60261E526E00A3BB01 /* DetailScrollView.swift */; };
+		CC884AF9261C82F800B47193 /* HomeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC884AF8261C82F800B47193 /* HomeTableView.swift */; };
+		F682E74D44D6F4667A2396F8 /* Pods_DesafioFinal_MariaClaraDaSilvaLopes_DesafioFinal_MariaClaraDaSilvaLopesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A8FE1F75D22A9DE9CE57060 /* Pods_DesafioFinal_MariaClaraDaSilvaLopes_DesafioFinal_MariaClaraDaSilvaLopesUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC21F98426166CA200FD3471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC21F96526166CA000FD3471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC21F96C26166CA000FD3471;
+			remoteInfo = DesafioFinal_MariaClaraDaSilvaLopes;
+		};
+		CC21F98F26166CA200FD3471 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC21F96526166CA000FD3471 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC21F96C26166CA000FD3471;
+			remoteInfo = DesafioFinal_MariaClaraDaSilvaLopes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E2B36EA91095BA029D3A2D1 /* Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.release.xcconfig"; path = "Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5B42913EF41119011EFFE799 /* Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopesTests/Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A8FE1F75D22A9DE9CE57060 /* Pods_DesafioFinal_MariaClaraDaSilvaLopes_DesafioFinal_MariaClaraDaSilvaLopesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioFinal_MariaClaraDaSilvaLopes_DesafioFinal_MariaClaraDaSilvaLopesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82013E5268892C0700050B8D /* Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.debug.xcconfig"; path = "Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A5A61F2B7E7F990993FDD1E /* Pods_DesafioFinal_MariaClaraDaSilvaLopes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioFinal_MariaClaraDaSilvaLopes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A342A9AAE7D0DA002F6D1243 /* Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.release.xcconfig"; path = "Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopesTests/Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4A71B89CFA60E31D14B47DB /* Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig"; path = "Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes/Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig"; sourceTree = "<group>"; };
+		CC0CB97F261DEFBF00B5C77C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CC0CB984261DEFDA00B5C77C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CC137685261F9DC90022EDBE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		CC1494A926193CD0005CAC02 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CC1494AE2619416D005CAC02 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CC21F96D26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioFinal_MariaClaraDaSilvaLopes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC21F97026166CA000FD3471 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CC21F97226166CA000FD3471 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CC21F97426166CA000FD3471 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CC21F97726166CA000FD3471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CC21F97926166CA200FD3471 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CC21F97C26166CA200FD3471 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CC21F97E26166CA200FD3471 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CC21F98326166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioFinal_MariaClaraDaSilvaLopesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC21F98E26166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioFinal_MariaClaraDaSilvaLopesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC21F9B426167ACD00FD3471 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CC7B3D60261E526E00A3BB01 /* DetailScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScrollView.swift; sourceTree = "<group>"; };
+		CC884AF8261C82F800B47193 /* HomeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableView.swift; sourceTree = "<group>"; };
+		E07BFC5E55DF58F568ACCE12 /* Pods-DesafioFinal_MariaClaraDaSilvaLopes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFinal_MariaClaraDaSilvaLopes.debug.xcconfig"; path = "Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes/Pods-DesafioFinal_MariaClaraDaSilvaLopes.debug.xcconfig"; sourceTree = "<group>"; };
+		F9E14AA953488C982276E775 /* Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC21F96A26166CA000FD3471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43FF6E85ED370CF7B40FFE6D /* Pods_DesafioFinal_MariaClaraDaSilvaLopes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC21F98026166CA200FD3471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A418842886D6B8E0F413F17B /* Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC21F98B26166CA200FD3471 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F682E74D44D6F4667A2396F8 /* Pods_DesafioFinal_MariaClaraDaSilvaLopes_DesafioFinal_MariaClaraDaSilvaLopesUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A27210FC3A0FBF4B2CFBE0F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5A61F2B7E7F990993FDD1E /* Pods_DesafioFinal_MariaClaraDaSilvaLopes.framework */,
+				6A8FE1F75D22A9DE9CE57060 /* Pods_DesafioFinal_MariaClaraDaSilvaLopes_DesafioFinal_MariaClaraDaSilvaLopesUITests.framework */,
+				F9E14AA953488C982276E775 /* Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5FDA0AB110FB92FB2A5C15F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E07BFC5E55DF58F568ACCE12 /* Pods-DesafioFinal_MariaClaraDaSilvaLopes.debug.xcconfig */,
+				C4A71B89CFA60E31D14B47DB /* Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig */,
+				82013E5268892C0700050B8D /* Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.debug.xcconfig */,
+				2E2B36EA91095BA029D3A2D1 /* Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.release.xcconfig */,
+				5B42913EF41119011EFFE799 /* Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.debug.xcconfig */,
+				A342A9AAE7D0DA002F6D1243 /* Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CC0CB97E261DEF8700B5C77C /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CC0CB97F261DEFBF00B5C77C /* DetailViewController.swift */,
+				CC0CB984261DEFDA00B5C77C /* DetailView.swift */,
+				CC7B3D60261E526E00A3BB01 /* DetailScrollView.swift */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		CC1494A726193C82005CAC02 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CC21F97426166CA000FD3471 /* LoginViewController.swift */,
+				CC21F9B426167ACD00FD3471 /* LoginView.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		CC1494A826193C9A005CAC02 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CC1494A926193CD0005CAC02 /* HomeViewController.swift */,
+				CC1494AE2619416D005CAC02 /* HomeView.swift */,
+				CC884AF8261C82F800B47193 /* HomeTableView.swift */,
+				CC137685261F9DC90022EDBE /* HomeTableViewCell.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		CC21F96426166CA000FD3471 = {
+			isa = PBXGroup;
+			children = (
+				CC21F96F26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes */,
+				CC21F96E26166CA000FD3471 /* Products */,
+				C5FDA0AB110FB92FB2A5C15F /* Pods */,
+				A27210FC3A0FBF4B2CFBE0F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CC21F96E26166CA000FD3471 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC21F96D26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes.app */,
+				CC21F98326166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesTests.xctest */,
+				CC21F98E26166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC21F96F26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes */ = {
+			isa = PBXGroup;
+			children = (
+				CC21F97026166CA000FD3471 /* AppDelegate.swift */,
+				CC21F97226166CA000FD3471 /* SceneDelegate.swift */,
+				CC21F9A626166CF400FD3471 /* Source */,
+				CC21F97926166CA200FD3471 /* Assets.xcassets */,
+				CC21F97B26166CA200FD3471 /* LaunchScreen.storyboard */,
+				CC21F97E26166CA200FD3471 /* Info.plist */,
+			);
+			path = DesafioFinal_MariaClaraDaSilvaLopes;
+			sourceTree = "<group>";
+		};
+		CC21F9A626166CF400FD3471 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CC21F97626166CA000FD3471 /* Main.storyboard */,
+				CC1494A726193C82005CAC02 /* LoginScreen */,
+				CC1494A826193C9A005CAC02 /* HomeScreen */,
+				CC0CB97E261DEF8700B5C77C /* DetailScreen */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CC21F96C26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC21F99726166CA200FD3471 /* Build configuration list for PBXNativeTarget "DesafioFinal_MariaClaraDaSilvaLopes" */;
+			buildPhases = (
+				0EBB15AF3F60D5D94B655EF5 /* [CP] Check Pods Manifest.lock */,
+				CC21F96926166CA000FD3471 /* Sources */,
+				CC21F96A26166CA000FD3471 /* Frameworks */,
+				CC21F96B26166CA000FD3471 /* Resources */,
+				FDEE8A1BAC8260C8AC36BFF8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioFinal_MariaClaraDaSilvaLopes;
+			productName = DesafioFinal_MariaClaraDaSilvaLopes;
+			productReference = CC21F96D26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CC21F98226166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC21F99A26166CA200FD3471 /* Build configuration list for PBXNativeTarget "DesafioFinal_MariaClaraDaSilvaLopesTests" */;
+			buildPhases = (
+				D07F2EA283C3943A075C98AE /* [CP] Check Pods Manifest.lock */,
+				CC21F97F26166CA200FD3471 /* Sources */,
+				CC21F98026166CA200FD3471 /* Frameworks */,
+				CC21F98126166CA200FD3471 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC21F98526166CA200FD3471 /* PBXTargetDependency */,
+			);
+			name = DesafioFinal_MariaClaraDaSilvaLopesTests;
+			productName = DesafioFinal_MariaClaraDaSilvaLopesTests;
+			productReference = CC21F98326166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CC21F98D26166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC21F99D26166CA200FD3471 /* Build configuration list for PBXNativeTarget "DesafioFinal_MariaClaraDaSilvaLopesUITests" */;
+			buildPhases = (
+				6C9A2EB3EF7CB2BE9D5970CA /* [CP] Check Pods Manifest.lock */,
+				CC21F98A26166CA200FD3471 /* Sources */,
+				CC21F98B26166CA200FD3471 /* Frameworks */,
+				CC21F98C26166CA200FD3471 /* Resources */,
+				FC599F574737ED6219AD18F9 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC21F99026166CA200FD3471 /* PBXTargetDependency */,
+			);
+			name = DesafioFinal_MariaClaraDaSilvaLopesUITests;
+			productName = DesafioFinal_MariaClaraDaSilvaLopesUITests;
+			productReference = CC21F98E26166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC21F96526166CA000FD3471 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CC21F96C26166CA000FD3471 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CC21F98226166CA200FD3471 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CC21F96C26166CA000FD3471;
+					};
+					CC21F98D26166CA200FD3471 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = CC21F96C26166CA000FD3471;
+					};
+				};
+			};
+			buildConfigurationList = CC21F96826166CA000FD3471 /* Build configuration list for PBXProject "DesafioFinal_MariaClaraDaSilvaLopes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CC21F96426166CA000FD3471;
+			productRefGroup = CC21F96E26166CA000FD3471 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC21F96C26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes */,
+				CC21F98226166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesTests */,
+				CC21F98D26166CA200FD3471 /* DesafioFinal_MariaClaraDaSilvaLopesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC21F96B26166CA000FD3471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC21F97D26166CA200FD3471 /* LaunchScreen.storyboard in Resources */,
+				CC21F97A26166CA200FD3471 /* Assets.xcassets in Resources */,
+				CC21F97826166CA000FD3471 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC21F98126166CA200FD3471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC21F98C26166CA200FD3471 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EBB15AF3F60D5D94B655EF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioFinal_MariaClaraDaSilvaLopes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C9A2EB3EF7CB2BE9D5970CA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D07F2EA283C3943A075C98AE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DesafioFinal_MariaClaraDaSilvaLopesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC599F574737ED6219AD18F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests/Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDEE8A1BAC8260C8AC36BFF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes/Pods-DesafioFinal_MariaClaraDaSilvaLopes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes/Pods-DesafioFinal_MariaClaraDaSilvaLopes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes/Pods-DesafioFinal_MariaClaraDaSilvaLopes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC21F96926166CA000FD3471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC21F97526166CA000FD3471 /* LoginViewController.swift in Sources */,
+				CC0CB985261DEFDA00B5C77C /* DetailView.swift in Sources */,
+				CC7B3D61261E526E00A3BB01 /* DetailScrollView.swift in Sources */,
+				CC1494AF2619416D005CAC02 /* HomeView.swift in Sources */,
+				CC21F9B526167ACD00FD3471 /* LoginView.swift in Sources */,
+				CC137686261F9DC90022EDBE /* HomeTableViewCell.swift in Sources */,
+				CC884AF9261C82F800B47193 /* HomeTableView.swift in Sources */,
+				CC1494AA26193CD0005CAC02 /* HomeViewController.swift in Sources */,
+				CC21F97126166CA000FD3471 /* AppDelegate.swift in Sources */,
+				CC21F97326166CA000FD3471 /* SceneDelegate.swift in Sources */,
+				CC0CB980261DEFBF00B5C77C /* DetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC21F97F26166CA200FD3471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC21F98A26166CA200FD3471 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC21F98526166CA200FD3471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC21F96C26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes */;
+			targetProxy = CC21F98426166CA200FD3471 /* PBXContainerItemProxy */;
+		};
+		CC21F99026166CA200FD3471 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC21F96C26166CA000FD3471 /* DesafioFinal_MariaClaraDaSilvaLopes */;
+			targetProxy = CC21F98F26166CA200FD3471 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC21F97626166CA000FD3471 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC21F97726166CA000FD3471 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CC21F97B26166CA200FD3471 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC21F97C26166CA200FD3471 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC21F99526166CA200FD3471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CC21F99626166CA200FD3471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CC21F99826166CA200FD3471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E07BFC5E55DF58F568ACCE12 /* Pods-DesafioFinal_MariaClaraDaSilvaLopes.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3MA8VSY44;
+				INFOPLIST_FILE = DesafioFinal_MariaClaraDaSilvaLopes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariaclaralopes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CC21F99926166CA200FD3471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4A71B89CFA60E31D14B47DB /* Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3MA8VSY44;
+				INFOPLIST_FILE = DesafioFinal_MariaClaraDaSilvaLopes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mariaclaralopes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC21F99B26166CA200FD3471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B42913EF41119011EFFE799 /* Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3MA8VSY44;
+				INFOPLIST_FILE = DesafioFinal_MariaClaraDaSilvaLopesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariaclaralopes.DesafioFinal-MariaClaraDaSilvaLopesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioFinal_MariaClaraDaSilvaLopes.app/DesafioFinal_MariaClaraDaSilvaLopes";
+			};
+			name = Debug;
+		};
+		CC21F99C26166CA200FD3471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A342A9AAE7D0DA002F6D1243 /* Pods-DesafioFinal_MariaClaraDaSilvaLopesTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3MA8VSY44;
+				INFOPLIST_FILE = DesafioFinal_MariaClaraDaSilvaLopesTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariaclaralopes.DesafioFinal-MariaClaraDaSilvaLopesTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioFinal_MariaClaraDaSilvaLopes.app/DesafioFinal_MariaClaraDaSilvaLopes";
+			};
+			name = Release;
+		};
+		CC21F99E26166CA200FD3471 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82013E5268892C0700050B8D /* Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3MA8VSY44;
+				INFOPLIST_FILE = DesafioFinal_MariaClaraDaSilvaLopesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariaclaralopes.DesafioFinal-MariaClaraDaSilvaLopesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioFinal_MariaClaraDaSilvaLopes;
+			};
+			name = Debug;
+		};
+		CC21F99F26166CA200FD3471 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2B36EA91095BA029D3A2D1 /* Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q3MA8VSY44;
+				INFOPLIST_FILE = DesafioFinal_MariaClaraDaSilvaLopesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mariaclaralopes.DesafioFinal-MariaClaraDaSilvaLopesUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioFinal_MariaClaraDaSilvaLopes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC21F96826166CA000FD3471 /* Build configuration list for PBXProject "DesafioFinal_MariaClaraDaSilvaLopes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC21F99526166CA200FD3471 /* Debug */,
+				CC21F99626166CA200FD3471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC21F99726166CA200FD3471 /* Build configuration list for PBXNativeTarget "DesafioFinal_MariaClaraDaSilvaLopes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC21F99826166CA200FD3471 /* Debug */,
+				CC21F99926166CA200FD3471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC21F99A26166CA200FD3471 /* Build configuration list for PBXNativeTarget "DesafioFinal_MariaClaraDaSilvaLopesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC21F99B26166CA200FD3471 /* Debug */,
+				CC21F99C26166CA200FD3471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC21F99D26166CA200FD3471 /* Build configuration list for PBXNativeTarget "DesafioFinal_MariaClaraDaSilvaLopesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC21F99E26166CA200FD3471 /* Debug */,
+				CC21F99F26166CA200FD3471 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC21F96526166CA000FD3471 /* Project object */;
+}

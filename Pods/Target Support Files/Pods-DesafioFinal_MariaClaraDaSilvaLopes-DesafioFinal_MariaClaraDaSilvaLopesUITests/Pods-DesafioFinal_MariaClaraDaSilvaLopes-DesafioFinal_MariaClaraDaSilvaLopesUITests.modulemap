@@ -1,0 +1,6 @@
+framework module Pods_DesafioFinal_MariaClaraDaSilvaLopes_DesafioFinal_MariaClaraDaSilvaLopesUITests {
+  umbrella header "Pods-DesafioFinal_MariaClaraDaSilvaLopes-DesafioFinal_MariaClaraDaSilvaLopesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
