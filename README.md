@@ -1,5 +1,3 @@
-# DesafioFinalCamp
-
 # Desafio Pessoa Desenvolvedora iOS
 
 ## 🏗  O que fazer?
