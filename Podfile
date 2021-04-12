@@ -7,6 +7,8 @@ target 'DesafioFinal_MariaClaraDaSilvaLopes' do
 
   # Pods for DesafioFinal_MariaClaraDaSilvaLopes
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Alamofire', '~> 5.2'
+  pod 'Kingfisher', '~> 6.0'
 
   target 'DesafioFinal_MariaClaraDaSilvaLopesTests' do
     inherit! :search_paths

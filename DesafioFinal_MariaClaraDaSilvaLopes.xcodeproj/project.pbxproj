@@ -11,6 +11,9 @@
 		A418842886D6B8E0F413F17B /* Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9E14AA953488C982276E775 /* Pods_DesafioFinal_MariaClaraDaSilvaLopesTests.framework */; };
 		CC0CB980261DEFBF00B5C77C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0CB97F261DEFBF00B5C77C /* DetailViewController.swift */; };
 		CC0CB985261DEFDA00B5C77C /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC0CB984261DEFDA00B5C77C /* DetailView.swift */; };
+		CC1260582622301900A6AF76 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1260572622301900A6AF76 /* UserModel.swift */; };
+		CC1260742622878400A6AF76 /* RequestConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1260732622878400A6AF76 /* RequestConfig.swift */; };
+		CC12608E2623413C00A6AF76 /* EnterpriseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC12608D2623413C00A6AF76 /* EnterpriseModel.swift */; };
 		CC137686261F9DC90022EDBE /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC137685261F9DC90022EDBE /* HomeTableViewCell.swift */; };
 		CC1494AA26193CD0005CAC02 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1494A926193CD0005CAC02 /* HomeViewController.swift */; };
 		CC1494AF2619416D005CAC02 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC1494AE2619416D005CAC02 /* HomeView.swift */; };
@@ -53,6 +56,9 @@
 		C4A71B89CFA60E31D14B47DB /* Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig"; path = "Target Support Files/Pods-DesafioFinal_MariaClaraDaSilvaLopes/Pods-DesafioFinal_MariaClaraDaSilvaLopes.release.xcconfig"; sourceTree = "<group>"; };
 		CC0CB97F261DEFBF00B5C77C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CC0CB984261DEFDA00B5C77C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CC1260572622301900A6AF76 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		CC1260732622878400A6AF76 /* RequestConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestConfig.swift; sourceTree = "<group>"; };
+		CC12608D2623413C00A6AF76 /* EnterpriseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseModel.swift; sourceTree = "<group>"; };
 		CC137685261F9DC90022EDBE /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		CC1494A926193CD0005CAC02 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		CC1494AE2619416D005CAC02 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -134,6 +140,25 @@
 			path = DetailScreen;
 			sourceTree = "<group>";
 		};
+		CC12604B26222E2A00A6AF76 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CC21F97626166CA000FD3471 /* Main.storyboard */,
+				CC12604C26222E5A00A6AF76 /* ModelAPI */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CC12604C26222E5A00A6AF76 /* ModelAPI */ = {
+			isa = PBXGroup;
+			children = (
+				CC1260572622301900A6AF76 /* UserModel.swift */,
+				CC1260732622878400A6AF76 /* RequestConfig.swift */,
+				CC12608D2623413C00A6AF76 /* EnterpriseModel.swift */,
+			);
+			path = ModelAPI;
+			sourceTree = "<group>";
+		};
 		CC1494A726193C82005CAC02 /* LoginScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,7 +215,7 @@
 		CC21F9A626166CF400FD3471 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CC21F97626166CA000FD3471 /* Main.storyboard */,
+				CC12604B26222E2A00A6AF76 /* API */,
 				CC1494A726193C82005CAC02 /* LoginScreen */,
 				CC1494A826193C9A005CAC02 /* HomeScreen */,
 				CC0CB97E261DEF8700B5C77C /* DetailScreen */,
@@ -438,10 +463,13 @@
 			files = (
 				CC21F97526166CA000FD3471 /* LoginViewController.swift in Sources */,
 				CC0CB985261DEFDA00B5C77C /* DetailView.swift in Sources */,
+				CC1260742622878400A6AF76 /* RequestConfig.swift in Sources */,
 				CC7B3D61261E526E00A3BB01 /* DetailScrollView.swift in Sources */,
 				CC1494AF2619416D005CAC02 /* HomeView.swift in Sources */,
 				CC21F9B526167ACD00FD3471 /* LoginView.swift in Sources */,
 				CC137686261F9DC90022EDBE /* HomeTableViewCell.swift in Sources */,
+				CC1260582622301900A6AF76 /* UserModel.swift in Sources */,
+				CC12608E2623413C00A6AF76 /* EnterpriseModel.swift in Sources */,
 				CC884AF9261C82F800B47193 /* HomeTableView.swift in Sources */,
 				CC1494AA26193CD0005CAC02 /* HomeViewController.swift in Sources */,
 				CC21F97126166CA000FD3471 /* AppDelegate.swift in Sources */,

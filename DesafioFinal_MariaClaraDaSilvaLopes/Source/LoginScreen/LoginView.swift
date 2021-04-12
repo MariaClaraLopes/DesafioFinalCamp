@@ -3,7 +3,7 @@ import SnapKit
 
 class LoginView: UIView {
     
-    var didTapOk: ((_ button: UIButton) -> Void)?
+    var didTapOk: (((email: String, password: String)) -> Void)?
     
     let backgroundImageView: UIImageView = {
         let image = UIImageView()
@@ -59,7 +59,7 @@ class LoginView: UIView {
         textField.addTarget(self, action:#selector(emailChangeColorClickedTextField), for: .touchUpInside)
         return textField
     }()
-
+    
     let passwordLabelContentView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
@@ -72,7 +72,7 @@ class LoginView: UIView {
         label.font = UIFont(name: "Rubik-Regular", size: 14)
         label.textColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1)
         return label
-    
+        
     }()
     
     let passwordContentView: UIView = {
@@ -87,7 +87,6 @@ class LoginView: UIView {
         textField.backgroundColor = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1)
         textField.keyboardType = .numbersAndPunctuation
         textField.attributedText = .init(string: "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.systemPink])
-
         textField.addTarget(self, action:#selector(passwordChangeColorClickedTextField), for: .touchUpInside)
         return textField
     }()
@@ -139,7 +138,7 @@ class LoginView: UIView {
         label.font = UIFont(name: "Rubik-Light", size: 12)
         return label
     }()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .white
@@ -166,39 +165,8 @@ class LoginView: UIView {
     }
     
     @objc func buttonEnterClicked(sender: UIButton) {
-        //let emailTeste: String = "testeapple@ioasys.com.br"
-        let emailTeste: String = "teste"
-        //let passwordTeste: String = "12341234"
-        let passwordTeste: String = "123"
-        if emailTextField.text == "" || passwordTextField.text == "" {
-            print("vazia")
-            emailContentView.layer.borderColor = UIColor.red.cgColor
-            emailContentView.layer.borderWidth = 1
-            passwordContentView.layer.borderColor = UIColor.red.cgColor
-            passwordContentView.layer.borderWidth = 1
-            
-            passwordHideButton.isHidden = true
-            imageErrorEmail.isHidden = false
-            imageErrorPassword.isHidden = false
-            labelError.isHidden = false
-
-        } else if emailTextField.text != emailTeste || passwordTextField.text != passwordTeste {
-            print("LOGIN ERRADO")
-            emailContentView.layer.borderColor = UIColor.red.cgColor
-            emailContentView.layer.borderWidth = 1
-            passwordContentView.layer.borderColor = UIColor.red.cgColor
-            passwordContentView.layer.borderWidth = 1
-            
-            passwordHideButton.isHidden = true
-            imageErrorEmail.isHidden = false
-            imageErrorPassword.isHidden = false
-            labelError.isHidden = false
-
-        } else {
-            print("ENTREI")
-            didTapOk?(sender)
-            labelError.isHidden = true
-        }
+        guard let email = emailTextField.text, let password = passwordTextField.text else {return}
+        didTapOk?((email: email, password: password))
     }
     
     func setupView() {
@@ -206,11 +174,9 @@ class LoginView: UIView {
         self.addGestureRecognizer(tapGesture)
         let tapReturn = UITapGestureRecognizer(target: self, action: #selector(textFieldShouldReturn))
         self.addGestureRecognizer(tapReturn)
-        
         imageErrorEmail.isHidden = true
         imageErrorPassword.isHidden = true
         labelError.isHidden = true
-        
         self.addSubview(backgroundImageView)
         backgroundImageView.addSubview(logoImageView)
         backgroundImageView.addSubview(logoLabel)
@@ -242,6 +208,17 @@ class LoginView: UIView {
         emailLabel.textColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1)
         passwordLabel.textColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1)
         return false
+    }
+    
+    func loginError() {
+        emailContentView.layer.borderColor = UIColor.red.cgColor
+        emailContentView.layer.borderWidth = 1
+        passwordContentView.layer.borderColor = UIColor.red.cgColor
+        passwordContentView.layer.borderWidth = 1
+        passwordHideButton.isHidden = true
+        imageErrorEmail.isHidden = false
+        imageErrorPassword.isHidden = false
+        labelError.isHidden = false
     }
     
     func setConstraints() {
@@ -289,7 +266,7 @@ class LoginView: UIView {
             make.right.equalToSuperview().offset(-16)
             make.height.equalTo(48)
         }
-
+        
         emailTextField.snp.makeConstraints { (make) in
             make.top.equalToSuperview()
             make.left.equalToSuperview().offset(8)
@@ -362,7 +339,7 @@ class LoginView: UIView {
             make.top.equalTo(loginContentView.snp_bottomMargin).offset(4)
             make.right.equalToSuperview().offset(-20)
         }
-
+        
     }
 }
 
@@ -388,6 +365,14 @@ extension LoginView: UITextFieldDelegate {
             passwordContentView.layer.borderColor = UIColor(red: 0.96, green: 0.96, blue: 0.96, alpha: 1).cgColor
             imageErrorPassword.isHidden = true
             passwordHideButton.isHidden = false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == emailTextField {
+            emailLabel.textColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1)
+        } else if textField == passwordTextField {
+            passwordLabel.textColor = UIColor(red: 0.4, green: 0.4, blue: 0.4, alpha: 1)
         }
     }
 }
